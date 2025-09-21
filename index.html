@@ -3,61 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IoT Nusantara - Jual Beli, Forum, & Jasa PCB</title>
+    <title>Synapse Forge - Marketplace & Komunitas IoT Indonesia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <a href="index.html" id="logo">IoT Nusantara</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="marketplace.html">Marketplace</a></li>
-                    <li><a href="#">Forum</a></li>
-                    <li><a href="jasa-pcb.html">Jasa PCB</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav>
+            <div class="logo">Synapse Forge</div>
+            <ul class="nav-links">
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Jasa PCB</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#">Masuk</a>
+                <a href="#" class="cta-button-secondary">Daftar</a>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <section id="hero" style="text-align: center; padding: 80px 20px; background: #e0f7fa;">
-            <div class="container">
-                <h1>Gerbang Komunitas IoT Terlengkap di Indonesia</h1>
-                <p>Temukan perangkat bekas berkualitas, diskusikan proyek, dan wujudkan ide Anda dengan jasa cetak PCB kami.</p>
-                <a href="marketplace.html" class="btn">Jelajahi Marketplace</a>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Platform Terpadu untuk Kreator IoT Indonesia</h1>
+                <p>Jual beli perangkat bekas, diskusi di forum, hingga cetak PCB berkualitas tinggi. Semua ada di sini.</p>
+                <a href="#" class="cta-button">Jelajahi Marketplace</a>
             </div>
         </section>
 
-        <section id="featured-products" class="container" style="padding: 40px 20px;">
-            <h2 style="text-align: center;">Produk Unggulan</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x200.png?text=ESP32" alt="ESP32 Bekas">
-                    <div class="card-content">
-                        <h3>ESP32 DevKit V1 (Bekas)</h3>
-                        <div class="price">Rp 55.000</div>
-                        <p>Kondisi 95%, fungsi normal. Dijual karena upgrade.</p>
-                        <a href="#" class="btn">Lihat Detail</a>
-                    </div>
+        <section class="features">
+            <h2>Satu Tempat, Semua Kebutuhan IoT Anda</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="https://placehold.co/80x80/28a745/ffffff?text=🛒" alt="E-commerce Icon">
+                    <h3>Marketplace Terpercaya</h3>
+                    <p>Temukan dan jual perangkat IoT bekas seperti mikrokontroler, sensor, dan modul dengan aman dan mudah.</p>
                 </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x200.png?text=Raspberry+Pi" alt="Raspberry Pi Bekas">
-                    <div class="card-content">
-                        <h3>Raspberry Pi 4 2GB (Second)</h3>
-                        <div class="price">Rp 650.000</div>
-                        <p>Lengkap dengan casing dan adaptor original.</p>
-                        <a href="#" class="btn">Lihat Detail</a>
-                    </div>
+                <div class="feature-card">
+                    <img src="https://placehold.co/80x80/28a745/ffffff?text=💬" alt="Forum Icon">
+                    <h3>Komunitas Aktif</h3>
+                    <p>Bagikan proyek, tanyakan masalah, dan berkolaborasi dengan ribuan pegiat IoT lainnya di forum diskusi.</p>
                 </div>
+                <div class="feature-card">
+                    <img src="https://placehold.co/80x80/28a745/ffffff?text=⚙️" alt="PCB Icon">
+                    <h3>Jasa Cetak PCB</h3>
+                    <p>Upload desain Anda dan dapatkan PCB berkualitas profesional dengan harga kompetitif dan pengerjaan cepat.</p>
                 </div>
+            </div>
         </section>
+        
+        <section class="featured-products">
+             <h2>Produk Unggulan di Marketplace</h2>
+             <div class="product-grid">
+                 <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61ezFmp2wZL._AC_SL1001_.jpg" alt="Produk IoT">
+                    <h3>ESP32 DevKit V1 Bekas</h3>
+                    <p class="price">Rp 75.000</p>
+                    <p class="seller">oleh: Budi Sentosa</p>
+                 </div>
+                 <div class="product-card">
+                    <img src="https://toko-it.com/wp-content/uploads/2024/07/raspi-4.webp" alt="Produk IoT">
+                    <h3>Raspberry Pi 4 Model B 4GB</h3>
+                    <p class="price">Rp 950.000</p>
+                    <p class="seller">oleh: Citra Lestari</p>
+                 </div>
+                 <div class="product-card">
+                    <img src="https://www.nn-digital.com/wp-content/uploads/2019/07/Sensor-HC-SR04-1.jpg" alt="Produk IoT">
+                    <h3>Sensor Jarak Ultrasonik HC-SR04</h3>
+                    <p class="price">Rp 15.000</p>
+                    <p class="seller">oleh: Eko Prasetyo</p>
+                 </div>
+                 <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWwMCX1T_vAAH2CS2MN8OrsPNY5lEIGJG9eg&s" alt="Produk IoT">
+                    <h3>ATmega 8535</h3>
+                    <p class="price">Rp 85.000</p>
+                    <p class="seller">oleh: Toko Sinar Jaya</p>
+                 </div>
+             </div>
+        </section>
+
+        <section class="latest-discussions">
+            <h2>Diskusi Terhangat dari Forum</h2>
+            <div class="discussion-list">
+                <div class="discussion-item">
+                    <h4><a href="#">Tutorial: Menghubungkan ESP32 ke Google Sheets tanpa Pihak Ketiga</a></h4>
+                    <p>dalam kategori <strong>Proyek & Tutorial</strong> oleh Rina</p>
+                </div>
+                <div class="discussion-item">
+                    <h4><a href="#">Rekomendasi Sensor Suhu & Kelembaban yang Akurat untuk Indoor?</a></h4>
+                    <p>dalam kategori <strong>Sensor & Aktuator</strong> oleh Adi</p>
+                </div>
+                <div class="discussion-item">
+                    <h4><a href="#">Error saat Upload Sketch ke Arduino Nano Clone, Mohon Bantuan</a></h4>
+                    <p>dalam kategori <strong>Mikrokontroler</strong> oleh Fajar</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2025 IoT Nusantara. Hak Cipta Dilindungi.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 SynapseForge. Seluruh Hak Cipta Dilindungi.</p>
+            <ul class="footer-links">
+                <li><a href="#">Syarat & Ketentuan</a></li>
+                <li><a href="#">Kebijakan Privasi</a></li>
+                <li><a href="#">Hubungi Kami</a></li>
+            </ul>
+        </div>
     </footer>
 
 </body>
