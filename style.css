@@ -171,7 +171,7 @@ nav {
     background-position: center bottom;
     background-repeat: no-repeat;
     z-index: 0;
-    opacity: 0.3; /* Atur transparansi sesuai selera */
+    opacity: 0.5; /* Atur transparansi sesuai selera */
 }
 
 .hero-content, .hero-image {
@@ -529,3 +529,4 @@ footer {
         max-width: 100%;
     }
 }
+
