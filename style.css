@@ -157,16 +157,21 @@ nav {
 }
 
 .hero::after {
-    content: ''; /* Wajib ada untuk pseudo-element */
-    position: absolute; /* Diposisikan relatif terhadap .hero */
+    content: ''; 
+    position: absolute; 
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60%; /* Sesuaikan tinggi gambar sesuai selera */
+    height: 60%; 
 
-    /* Background sudah dipindah ke body::after */
-    
-    z-index: 0; /* Biarkan ini untuk layering di dalam hero */
+    /* ✅ KEMBALIKAN BARIS-BARIS INI */
+    background-image: url('https://i.imgur.com/y4S6Do4.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    opacity: 0.5; 
+
+    z-index: 0; 
 }
 
 .hero-content, .hero-image {
@@ -327,8 +332,6 @@ footer {
     background-color: var(--dark-text);
     color: #fff;
     padding: 30px 5%;
-    position: relative; /* <-- TAMBAHKAN INI */
-    z-index: 1;         /* <-- TAMBAHKAN INI */
 }
 
 .footer-content {
@@ -527,10 +530,7 @@ footer {
     }
 }
 
-main {
-    position: relative;
-    z-index: 1;
-}
+
 /* --- Forum Page Styles --- */
 
 .forum-container {
@@ -716,23 +716,4 @@ main {
     border-radius: 5px;
     font-size: 0.8rem;
     font-weight: 600;
-}
-
-/* --- Latar Belakang Wireframe Global --- */
-body::after {
-    content: '';
-    position: fixed; /* Tetap di viewport */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60%; /* Ketinggian background */
-    
-    /* Link background dari hero section */
-    background-image: url('https://i.imgur.com/y4S6Do4.png'); 
-    
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    z-index: 0; /* <-- UBAH INI DARI -1 MENJADI 0 */
-    opacity: 0.5; /* Atur transparansi */
 }
