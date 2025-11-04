@@ -42,7 +42,7 @@ section {
 header {
     background-color: var(--header-color);
     border-bottom: 1px solid var(--header-border-color);
-    padding: 0 5%;
+    padding: 0 1%;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -164,14 +164,9 @@ nav {
     width: 100%;
     height: 60%; /* Sesuaikan tinggi gambar sesuai selera */
 
-    /* ✅ GUNAKAN LINK LANGSUNG INI */
-    background-image: url('https://i.imgur.com/y4S6Do4.png');
-
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    z-index: 0;
-    opacity: 0.5; /* Atur transparansi sesuai selera */
+    /* Background sudah dipindah ke body::after */
+    
+    z-index: 0; /* Biarkan ini untuk layering di dalam hero */
 }
 
 .hero-content, .hero-image {
@@ -530,3 +525,208 @@ footer {
     }
 }
 
+/* --- Forum Page Styles --- */
+
+.forum-container {
+    max-width: 1500px; /* Dibuat lebih lebar */
+    margin: 0 auto 40px auto; /* Memberi jarak dari header/footer */
+    padding: 1px 2% 0 2%; /* <-- DIUBAH MENJADI 30px */
+    color: #ffffff;
+
+    /* --- TAMBAHKAN DUA BARIS INI --- */
+    /* Membuat 'glow' warna #CBC8B9 (203,200,185) di belakang search bar */
+    background-image: radial-gradient(circle at 50% 0px, rgba(203, 200, 185, 0.2) 0%, rgba(0,0,0,0) 35%);
+    background-repeat: no-repeat;
+}
+
+.forum-container h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #222; /* Warna abu-abu gelap */
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 0; /* Menempel ke nav di bawahnya */
+
+    /* --- TAMBAHKAN INI --- */
+    max-width: 800px; /* Atur lebar maksimal search bar */
+    margin-left: auto;   /* Centering */
+    margin-right: auto;  /* Centering */
+}
+
+.search-bar svg {
+    margin-right: 10px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Forum Sub-navigation (Revisi Baru) */
+.forum-nav {
+    display: flex;
+    justify-content: center; /* Membuat item berkumpul di tengah */
+    gap: 50px; /* Jarak antar item (Categories, Latest, Top) */
+    
+    max-width: 800px; /* Samakan dengan search bar */
+    margin: 2px auto 1px auto; /* Jarak atas/bawah & centering */
+    
+    padding-bottom: 0; /* Hapus padding bawah container */
+}
+
+.forum-nav a {
+    color: #888;
+    font-weight: 600;
+    padding: 10px 0; /* Padding atas/bawah untuk link */
+    border-bottom: 3px solid transparent; /* Garis transparan */
+    transition: all 0.3s;
+    margin-bottom: -2px; /* Trik agar border sejajar */
+}
+
+.forum-nav a:hover {
+    color: #ffffff;
+    border-bottom-color: var(--primary-red); /* Garis merah HANYA saat hover */
+}
+
+/* Discussion List */
+.discussion-section {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.category-header {
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Menyejajarkan judul & garis */
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 0; /* <-- TAMBAHKAN BARIS INI */
+    margin-bottom: 15px;
+}
+
+/* Ini adalah kode untuk membuat garis di samping judul */
+.category-header::after {
+    content: '';
+    flex-grow: 1; /* Membuat garis memenuhi sisa ruang */
+    height: 1px; /* Tebal garis */
+    background-color: #333; /* Warna garis */
+    margin-left: 15px; /* Jarak antara teks dan garis */
+}
+
+.topic-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #1a1a1a; /* Latar belakang item */
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.topic-item:hover {
+    background-color: #222; /* Sedikit lebih terang saat di-hover */
+}
+
+.topic-item.highlighted {
+    border-color: #8A2BE2; /* Warna ungu untuk highlight */
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+.topic-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    flex-shrink: 0; /* Agar ikon tidak mengecil */
+}
+
+.topic-content {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.topic-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.topic-content h3 a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.topic-content h3 a:hover {
+    text-decoration: underline;
+}
+
+.topic-content p {
+    margin: 0;
+    color: #aaa; /* Warna deskripsi */
+    font-size: 0.9rem;
+}
+
+.topic-meta {
+    color: #888;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.topic-meta .user-tag {
+    background-color: #8A2BE2; /* Warna ungu */
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* --- Latar Belakang Wireframe Global --- */
+body::after {
+    content: '';
+    position: fixed; /* Tetap di viewport */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%; /* Ketinggian background */
+    
+    /* Link background dari hero section */
+    background-image: url('https://i.imgur.com/y4S6Do4.png'); 
+    
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: -1; /* PENTING: Posisikan di belakang SEMUA konten */
+    opacity: 0.5; /* Atur transparansi */
+}
