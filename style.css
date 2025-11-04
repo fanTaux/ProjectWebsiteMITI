@@ -327,6 +327,8 @@ footer {
     background-color: var(--dark-text);
     color: #fff;
     padding: 30px 5%;
+    position: relative; /* <-- TAMBAHKAN INI */
+    z-index: 1;         /* <-- TAMBAHKAN INI */
 }
 
 .footer-content {
@@ -525,6 +527,10 @@ footer {
     }
 }
 
+main {
+    position: relative;
+    z-index: 1;
+}
 /* --- Forum Page Styles --- */
 
 .forum-container {
@@ -727,6 +733,6 @@ body::after {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    z-index: -1; /* PENTING: Posisikan di belakang SEMUA konten */
+    z-index: 0; /* <-- UBAH INI DARI -1 MENJADI 0 */
     opacity: 0.5; /* Atur transparansi */
 }
