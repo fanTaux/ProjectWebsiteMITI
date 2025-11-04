@@ -40,7 +40,7 @@
     </header>
 
     <main>
-        <div class="forum-container">
+        <div class="forum-container marketplace-body">
             <h1>Find microcontrollers, sensors, and more.</h1>
 
             <div class="search-bar">
@@ -51,51 +51,105 @@
                 <span>⌘</span>
             </div>
 
-            <nav class="forum-nav">
-                <a href="#">Categories</a>
-                <a href="#">Latest</a>
-                <a href="#">Top</a>
-            </nav>
 
-            <section class="discussion-section">
-                <h2 class="category-header">Official Announcement</h2>
-                <div class="topic-item">
-                    <div class="topic-icon" style="background-color: #d9534f; font-size: 24px;">🚀</div>
-                    <div class="topic-content">
-                        <h3><a href="#">Introducing Our Latest Product!</a></h3>
-                        <p>On 5th November 2025, Synapse Forge will be launching the Synapse Forge Marketplace.</p>
-                    </div>
-                    <div class="topic-meta">
-                        <span>04/11/2025</span>
-                    </div>
-                </div>
-            </section>
-
-            <section class="discussion-section">
-                <h2 class="category-header">Community Discussions</h2>
+            <section class="category-section">
+                <h2>Parts by <span class="highlight-red">Category</span></h2>
+                <div class="category-grid">
+            
+                    <a href="#" class="category-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="6" height="6"></rect><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><path d="M9 3v6"></path><path d="M15 3v6"></path><path d="M9 21v-6"></path><path d="M15 21v-6"></path><path d="M21 9h-6"></path><path d="M21 15h-6"></path><path d="M3 9h6"></path><path d="M3 15h6"></path>
+                        </svg>
+                        <span>Microcontrollers</span>
+                    </a>
                 
-                <div class="topic-item">
-                    <div class="topic-icon" style="background-color: #f0ad4e; font-size: 24px;">⚡️</div>
-                    <div class="topic-content">
-                        <h3><a href="#">Getting Started</a></h3>
-                        <p>If you're new to IoT Development, feel free to ask any questions here!</p>
-                    </div>
-                    <div class="topic-meta">
-                        <span>04/11/2025</span>
-                    </div>
-                </div>
+                    <a href="#" class="category-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle><polyline points="8 12 10 10 12 14 14 10 16 12"></polyline>
+                        </svg>
+                        <span>Sensors</span>
+                    </a>
+                
+                    <a href="#" class="category-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                        <span>Modules</span>
+                    </a>
+                
+                    <a href="#" class="category-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line>
+                        </svg>
+                        <span>Actuators</span>
+                    </a>
 
-                <div class="topic-item">
-                    <div class="topic-icon" style="background-color: #6c42f5; font-size: 24px;">✳️</div>
-                    <div class="topic-content">
-                        <h3><a href="#">Community Showcases</a></h3>
-                        <p>Show off your creations and share them with the community!</p>
+                    <a href="#" class="category-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.4 1.4a1 1 0 0 0 1.4 0l3.5-3.5a1 1 0 0 0 0-1.4l-1.4-1.4a1 1 0 0 0-1.4 0L14.7 6.3z"></path>
+                            <path d="M9.5 11.5 3 18c-2 2-2 5 1 7s5 1 7 1l6.5-6.5"></path>
+                            <path d="m11.5 9.5 6.5 6.5"></path>
+                        </svg>
+                        <span>Tools & Supplies</span>
+                    </a>
+                
+                    <a href="#" class="category-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <circle cx="19" cy="12" r="1"></circle>
+                            <circle cx="5" cy="12" r="1"></circle>
+                        </svg>
+                        <span>Others</span>
+                    </a>
                     </div>
-                    <div class="topic-meta">
-                        <span>04/11/2025</span>
-                    </div>
-                </div>
             </section>
+            
+    
+        </div>
+    </section> <section class="featured-products-section">
+        <h2>Featured <span class="highlight-red">Products</span></h2>
+
+        <div class="featured-grid">
+            
+            <div class="featured-card">
+                <div class="featured-card-image">
+                    <img src="https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/_images/esp32-DevKitM-1-isometric.png" alt="ESP32 Module">
+                </div>
+                <h3>ESP32</h3>
+                <p>Microcontroller</p>
+                <a href="#" class="btn-view-details">View Details</a>
+            </div>
+
+            <div class="featured-card">
+                <div class="featured-card-image">
+                    <img src="https://ibb.co.com/DgKBXVf1" alt="L298N Motor Driver">
+                </div>
+                <h3>L298N Motor Driver</h3>
+                <p>Modules</p>
+                <a href="#" class="btn-view-details">View Details</a>
+            </div>
+
+            <div class="featured-card">
+                <div class="featured-card-image">
+                    <img src="https://ibb.co.com/8DRdb2TQ" alt="DHT11 Sensor">
+                </div>
+                <h3>DHT11 Temperature Sensor</h3>
+                <p>Sensor</p>
+                <a href="#" class="btn-view-details">View Details</a>
+            </div>
+
+            <div class="featured-card">
+                <div class="featured-card-image">
+                    <img src="https://ibb.co.com/sv0WYnc4" alt="Infrared Sensor">
+                </div>
+                <h3>Infrared Sensor</h3>
+                <p>Sensors</p>
+                <a href="#" class="btn-view-details">View Details</a>
+            </div>
+
+        </div>
+    </section>
+
 
         </div>
     </main>
