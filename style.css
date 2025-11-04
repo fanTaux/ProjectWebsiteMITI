@@ -528,21 +528,34 @@ footer {
     .showcase-text p {
         max-width: 100%;
     }
+    .category-grid {
+        grid-template-columns: repeat(1, 1fr); /* <-- UBAH INI (dari 2 menjadi 1) */
+    }
+
+    .category-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 
 /* --- Forum Page Styles --- */
 
+/* Ini adalah style .forum-container asli (glow krem) */
 .forum-container {
-    max-width: 1500px; /* Dibuat lebih lebar */
-    margin: 0 auto 40px auto; /* Memberi jarak dari header/footer */
-    padding: 1px 2% 0 2%; /* <-- DIUBAH MENJADI 30px */
+    max-width: 1500px; 
+    margin: 0 auto 40px auto; 
+    padding: 1px 2% 0 2%;
     color: #ffffff;
-
-    /* --- TAMBAHKAN DUA BARIS INI --- */
-    /* Membuat 'glow' warna #CBC8B9 (203,200,185) di belakang search bar */
     background-image: radial-gradient(circle at 50% 0px, rgba(203, 200, 185, 0.2) 0%, rgba(0,0,0,0) 35%);
     background-repeat: no-repeat;
+}
+
+/* TAMBAHKAN RULE INI: 
+  Ini hanya akan berlaku jika .forum-container DAN .marketplace-body ada bersamaan 
+*/
+.forum-container.marketplace-body {
+    background-image: radial-gradient(circle at 50% 0px, rgba(255, 0, 0, 0.25) 0%, rgba(0,0,0,0) 35%);
 }
 
 .forum-container h1 {
@@ -716,4 +729,180 @@ footer {
     border-radius: 5px;
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+/*
+--- Style untuk Halaman Marketplace ---
+*/
+
+/* 1. Perbaikan Glow Merah HANYA di Marketplace */
+.forum-container.marketplace-body {
+    /* Membuat 'glow' warna merah HANYA di halaman marketplace */
+    background-image: radial-gradient(circle at 50% 0px, rgba(255, 0, 0, 0.25) 0%, rgba(0,0,0,0) 35%);
+}
+
+/* 2. Style untuk Section Kategori Baru */
+.category-section {
+    max-width: 1200px; /* <-- UBAH INI JADI LEBIH LEBAR */
+    margin: 1px auto;
+    margin-bottom: -120px; 
+    text-align: left;
+}
+
+.category-section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.category-section h2 .highlight-red {
+    color: var(--primary-red);
+}
+
+/* 3. Style untuk Grid Kategori */
+/* Ganti rule .category-grid yang lama dengan ini */
+.category-grid {
+    display: grid;
+    /* PASTIKAN BARIS INI TEPAT SEPERTI DI BAWAH */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+}
+
+/* Ganti rule .category-card yang lama dengan ini */
+.category-card {
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px 30px; /* <-- UBAH INI */
+    
+    display: flex;
+    flex-direction: row; /* <-- UBAH INI */
+    align-items: center;
+    justify-content: flex-start; /* <-- UBAH INI */
+    gap: 12px; /* <-- UBAH INI */
+    
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+    
+    /* HAPUS baris 'aspect-ratio: 1 / 1;' */
+}
+
+.category-card:hover {
+    background-color: #333;
+    border-color: #555;
+    color: #ffffff;
+}
+
+/* Ganti rule .category-card svg yang lama dengan ini */
+.category-card svg {
+    width: 24px; /* <-- UBAH INI */
+    height: 24px; /* <-- UBAH INI */
+    stroke: currentColor; 
+    flex-shrink: 0; /* Mencegah ikon menyusut */
+}
+
+/* --- Tambahkan rule baru ini --- */
+.category-card span {
+    min-width: 0;             /* 1. Izinkan 'span' untuk mengecil (ini yang utama) */
+    white-space: nowrap;      /* 2. Jaga agar teks tetap satu baris */
+    overflow: hidden;         /* 3. Sembunyikan teks yang meluap */
+    text-overflow: ellipsis;  /* 4. Tampilkan "..." di akhir */
+}
+
+/* --- Aturan Posisi Kategori Baru --- */
+.category-card:nth-child(5) {
+    grid-column-start: 2;
+}
+
+/* --- Featured Products Section --- */
+.featured-products-section {
+    max-width: 1200px; /* Samakan dengan lebar .category-section */
+    margin: 0 auto 40px auto; /* Memberi jarak atas/bawah */
+    margin-bottom: 400px;
+    text-align: left;
+}
+
+.featured-products-section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.featured-products-section h2 .highlight-red {
+    color: var(--primary-red);
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 kolom sama rata */
+    gap: 15px;
+}
+
+.featured-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Menyusun item (gambar, teks, tombol) ke bawah */
+}
+
+/* Kotak untuk gambar */
+.featured-card-image {
+    width: 100%;
+    height: 150px; 
+    background-color: #2a2a2a; /* Latar belakang kotak gambar */
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Gambar di dalam kotak */
+.featured-card-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Memastikan gambar pas tanpa terpotong */
+}
+
+.featured-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Teks kategori (Microcontroller, Sensor, dll.) */
+.featured-card p {
+    margin: 0 0 15px 0;
+    color: #aaa;
+    font-size: 0.9rem;
+    flex-grow: 1; /* Mendorong tombol ke bagian bawah card */
+}
+
+/* Tombol "View Details" */
+.btn-view-details {
+    display: block;
+    text-align: center;
+    border: 1px solid #555;
+    color: #ffffff;
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-view-details:hover {
+    background-color: #333;
+    border-color: #777;
 }
