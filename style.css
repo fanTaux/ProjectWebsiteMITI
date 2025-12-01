@@ -125,10 +125,8 @@ nav {
 .hero {
     position: relative;
     overflow: hidden;
-    background-color: #000000; /* Mengubah background menjadi hitam pekat */
-    /*height: 100vh;*/
+    background-color: #000000; 
     display: flex;
-    /* align-items: flex-start; */
     align-items: center;
 
     justify-content: center;
@@ -139,19 +137,6 @@ nav {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     min-height: 70vh;
     
-    /* Kode background gradient yang lama dinonaktifkan dengan comment */
-    /*
-    background:
-        radial-gradient(circle at center,
-        rgba(100, 50, 150, 0.3) 0%,  
-        rgba(0, 0, 0, 0) 50%       
-    ),
-    linear-gradient(135deg,
-        #1A0F3D 0%,   
-        #0D0721 100% 
-    );
-    */
-
     background-size: cover;
     background-position: center;
 }
@@ -164,7 +149,6 @@ nav {
     width: 100%;
     height: 60%; 
 
-    /* ✅ KEMBALIKAN BARIS-BARIS INI */
     background-image: url('https://i.imgur.com/y4S6Do4.png');
     background-size: cover;
     background-position: center bottom;
@@ -175,30 +159,29 @@ nav {
 }
 
 .hero-content, .hero-image {
-    position: relative; /* Membuat elemen ini punya konteks tumpukan sendiri */
-    z-index: 1;         /* Menaikkan lapisannya di atas pseudo-element (gambar vektor) */
+    position: relative; 
+    z-index: 1;         
 }
 
 .hero-content {
-    flex-basis: 40%; /* Mengambil sekitar 50% lebar */
-    text-align: left; /* Teks menjadi rata kiri */
+    flex-basis: 40%; 
+    text-align: left; 
 }
 
 .hero-image {
-    flex-basis: 40%; /* Lebar kontainer gambar */
+    flex-basis: 40%; 
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    /* align-self: center; */
     margin-top: 120px;
 }
 
 .hero-image img {
     max-width: 110%;
     height: auto;
-    border-radius: 50%; /* Membuat gambar menjadi oval/lingkaran */
-    transform: rotate(123.62deg); /* Memiringkan gambar sebesar 15 derajat */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Opsional: menambah bayangan agar lebih dramatis */
+    border-radius: 50%; 
+    transform: rotate(123.62deg); 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); 
 }
 
 .hero-content h1 {
@@ -207,7 +190,7 @@ nav {
     font-size: 96px;
     font-style: normal;
     font-weight: 700;
-    line-height: 107.995%; /* 103.675px */
+    line-height: 107.995%; 
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -374,7 +357,7 @@ footer {
 .logo-text-wrapper {
     display: flex;
     justify-content: center;
-    flex-direction: column; /* Membuat item di dalamnya tersusun ke bawah */
+    flex-direction: column; 
 }
 
 .logo .logo-text-wrapper span {
@@ -382,14 +365,13 @@ footer {
     font-size: 1.4rem;
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 0.8; /* Membuat jarak antar baris tetap rapat */
+    line-height: 0.8; 
 }
 
 /* --- CSS Tambahan untuk Hero Section Halaman Kedua --- */
 
 .hero-v2 {
     background-color: #000000;
-    /* Membuat efek cahaya merah di belakang gambar */
     background-image: radial-gradient(circle at 75% 50%, rgba(200, 0, 0, 0.35) 0%, rgba(0,0,0,0) 40%);
     color: #ffffff;
     
@@ -420,22 +402,21 @@ footer {
 }
 
 .hero-v2 h1 {
-    font-family: "Poppins", sans-serif; /* Menggunakan Poppins agar lebih terbaca */
-    font-size: 4rem; /* Ukuran font bisa disesuaikan */
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem; 
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
-/* Styling untuk highlight pada teks */
 .hero-v2 h1 .highlight-beige,
 .hero-v2 h1 .highlight-red {
     padding: 2px 12px;
-    color: #000000; /* Warna teks di dalam highlight */
+    color: #000000; 
 }
 
 .hero-v2 h1 .highlight-beige {
-    background-color: var(--headerfont-color); /* Menggunakan variabel warna dari CSS Anda */
+    background-color: var(--headerfont-color); 
 }
 
 .hero-v2 h1 .highlight-red {
@@ -444,13 +425,12 @@ footer {
 
 .hero-v2 p {
     font-size: 1.2rem;
-    color: #cccccc; /* Sedikit lebih terang dari abu-abu biasa */
+    color: #cccccc;
     max-width: 500px;
 }
 
 .platform-showcase {
     background-color: #000000;
-    /* Membuat efek cahaya merah di belakang gambar */
     background-image: radial-gradient(circle at 75% 50%, rgb(255, 0, 0) 0%, rgba(0,0,0,0) 25%);
     color: #ffffff;
     
@@ -458,17 +438,17 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    padding: 300px 5%; /* Padding sedikit lebih besar */
+    padding: 300px 5%; 
     overflow: hidden;
     text-align: left;
 }
 
 .showcase-text {
-    flex-basis: 50%; /* Mengambil 50% lebar */
+    flex-basis: 50%; 
 }
 
 .showcase-image {
-    flex-basis: 45%; /* Mengambil 45% lebar */
+    flex-basis: 45%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,27 +457,25 @@ footer {
 .showcase-image img {
     max-width: 100%;
     height: auto;
-    /* Optional: Memberi sedikit efek rotasi seperti melayang */
     transform: rotate(-8deg); 
     filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
 }
 
 .showcase-text h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 3.5rem; /* Ukuran font besar */
+    font-size: 3.5rem; 
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 20px;
-    flex-basis: 40%; /* Mengambil sekitar 50% lebar */
+    flex-basis: 40%; 
     text-align: left;
 }
 
-/* Styling untuk highlight pada teks */
 .showcase-text .highlight-white,
 .showcase-text .highlight-red {
     padding: 2px 12px;
     border-radius: 6px;
-    color: #000000; /* Warna teks di dalam highlight */
+    color: #000000; 
 }
 
 .showcase-text .highlight-white {
@@ -505,31 +483,31 @@ footer {
 }
 
 .showcase-text .highlight-red {
-    background-color: var(--primary-red); /* Menggunakan variabel warna merah dari CSS Anda */
-    color: #ffffff; /* Teks di highlight merah lebih baik putih */
+    background-color: var(--primary-red); 
+    color: #ffffff; 
 }
 
 .showcase-text p {
     font-size: 1.3rem;
-    color: #ffffff; /* Abu-abu terang agar tidak terlalu menonjol */
-    max-width: 700px; /* Agar baris tidak terlalu panjang */
+    color: #ffffff; 
+    max-width: 700px; 
     line-height: 1.7;
 }
 
 /* Penyesuaian untuk Mobile */
 @media (max-width: 768px) {
     .platform-showcase {
-        flex-direction: column; /* Tumpuk elemen ke bawah di layar kecil */
+        flex-direction: column; 
         text-align: center;
     }
     .showcase-text h2 {
-        font-size: 2.5rem; /* Perkecil font di mobile */
+        font-size: 2.5rem; 
     }
     .showcase-text p {
         max-width: 100%;
     }
     .category-grid {
-        grid-template-columns: repeat(1, 1fr); /* <-- UBAH INI (dari 2 menjadi 1) */
+        grid-template-columns: repeat(1, 1fr); 
     }
 
     .category-section {
@@ -541,7 +519,6 @@ footer {
 
 /* --- Forum Page Styles --- */
 
-/* Ini adalah style .forum-container asli (glow krem) */
 .forum-container {
     max-width: 1500px; 
     margin: 0 auto 40px auto; 
@@ -551,9 +528,6 @@ footer {
     background-repeat: no-repeat;
 }
 
-/* TAMBAHKAN RULE INI: 
-  Ini hanya akan berlaku jika .forum-container DAN .marketplace-body ada bersamaan 
-*/
 .forum-container.marketplace-body {
     background-image: radial-gradient(circle at 50% 0px, rgba(255, 0, 0, 0.25) 0%, rgba(0,0,0,0) 35%);
 }
@@ -570,16 +544,14 @@ footer {
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: #222; /* Warna abu-abu gelap */
+    background-color: #222; 
     border: 1px solid #333;
     border-radius: 8px;
     padding: 10px 15px;
-    margin-bottom: 0; /* Menempel ke nav di bawahnya */
-
-    /* --- TAMBAHKAN INI --- */
-    max-width: 800px; /* Atur lebar maksimal search bar */
-    margin-left: auto;   /* Centering */
-    margin-right: auto;  /* Centering */
+    margin-bottom: 0; 
+    max-width: 800px; 
+    margin-left: auto;   
+    margin-right: auto;  
 }
 
 .search-bar svg {
@@ -604,30 +576,28 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Forum Sub-navigation (Revisi Baru) */
+/* Forum Sub-navigation */
 .forum-nav {
     display: flex;
-    justify-content: center; /* Membuat item berkumpul di tengah */
-    gap: 50px; /* Jarak antar item (Categories, Latest, Top) */
-    
-    max-width: 800px; /* Samakan dengan search bar */
-    margin: 2px auto 1px auto; /* Jarak atas/bawah & centering */
-    
-    padding-bottom: 0; /* Hapus padding bawah container */
+    justify-content: center; 
+    gap: 50px; 
+    max-width: 800px; 
+    margin: 2px auto 1px auto; 
+    padding-bottom: 0; 
 }
 
 .forum-nav a {
     color: #888;
     font-weight: 600;
-    padding: 10px 0; /* Padding atas/bawah untuk link */
-    border-bottom: 3px solid transparent; /* Garis transparan */
+    padding: 10px 0; 
+    border-bottom: 3px solid transparent; 
     transition: all 0.3s;
-    margin-bottom: -2px; /* Trik agar border sejajar */
+    margin-bottom: -2px; 
 }
 
 .forum-nav a:hover {
     color: #ffffff;
-    border-bottom-color: var(--primary-red); /* Garis merah HANYA saat hover */
+    border-bottom-color: var(--primary-red); 
 }
 
 /* Discussion List */
@@ -638,30 +608,29 @@ footer {
 }
 
 .category-header {
-    display: flex; /* Menggunakan flexbox */
-    align-items: center; /* Menyejajarkan judul & garis */
+    display: flex; 
+    align-items: center; 
     font-size: 1.25rem;
     font-weight: 600;
     color: #ffffff;
     text-align: left;
-    margin-top: 0; /* <-- TAMBAHKAN BARIS INI */
+    margin-top: 0; 
     margin-bottom: 15px;
 }
 
-/* Ini adalah kode untuk membuat garis di samping judul */
 .category-header::after {
     content: '';
-    flex-grow: 1; /* Membuat garis memenuhi sisa ruang */
-    height: 1px; /* Tebal garis */
-    background-color: #333; /* Warna garis */
-    margin-left: 15px; /* Jarak antara teks dan garis */
+    flex-grow: 1; 
+    height: 1px; 
+    background-color: #333; 
+    margin-left: 15px; 
 }
 
 .topic-item {
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #1a1a1a; /* Latar belakang item */
+    background-color: #1a1a1a; 
     border: 1px solid #333;
     border-radius: 8px;
     padding: 20px;
@@ -670,11 +639,11 @@ footer {
 }
 
 .topic-item:hover {
-    background-color: #222; /* Sedikit lebih terang saat di-hover */
+    background-color: #222; 
 }
 
 .topic-item.highlighted {
-    border-color: #8A2BE2; /* Warna ungu untuk highlight */
+    border-color: #8A2BE2; 
     box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
 }
 
@@ -687,7 +656,7 @@ footer {
     justify-content: center;
     font-size: 1.5rem;
     color: #ffffff;
-    flex-shrink: 0; /* Agar ikon tidak mengecil */
+    flex-shrink: 0; 
 }
 
 .topic-content {
@@ -712,7 +681,7 @@ footer {
 
 .topic-content p {
     margin: 0;
-    color: #aaa; /* Warna deskripsi */
+    color: #aaa; 
     font-size: 0.9rem;
 }
 
@@ -723,7 +692,7 @@ footer {
 }
 
 .topic-meta .user-tag {
-    background-color: #8A2BE2; /* Warna ungu */
+    background-color: #8A2BE2; 
     color: #ffffff;
     padding: 4px 10px;
     border-radius: 5px;
@@ -735,15 +704,8 @@ footer {
 --- Style untuk Halaman Marketplace ---
 */
 
-/* 1. Perbaikan Glow Merah HANYA di Marketplace */
-.forum-container.marketplace-body {
-    /* Membuat 'glow' warna merah HANYA di halaman marketplace */
-    background-image: radial-gradient(circle at 50% 0px, rgba(255, 0, 0, 0.25) 0%, rgba(0,0,0,0) 35%);
-}
-
-/* 2. Style untuk Section Kategori Baru */
 .category-section {
-    max-width: 1200px; /* <-- UBAH INI JADI LEBIH LEBAR */
+    max-width: 1200px; 
     margin: 1px auto;
     margin-bottom: -120px; 
     text-align: left;
@@ -760,35 +722,29 @@ footer {
     color: var(--primary-red);
 }
 
-/* 3. Style untuk Grid Kategori */
-/* Ganti rule .category-grid yang lama dengan ini */
 .category-grid {
     display: grid;
-    /* PASTIKAN BARIS INI TEPAT SEPERTI DI BAWAH */
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 15px;
 }
 
-/* Ganti rule .category-card yang lama dengan ini */
 .category-card {
     background-color: #222;
     border: 1px solid #333;
     border-radius: 8px;
-    padding: 20px 30px; /* <-- UBAH INI */
+    padding: 20px 30px; 
     
     display: flex;
-    flex-direction: row; /* <-- UBAH INI */
+    flex-direction: row; 
     align-items: center;
-    justify-content: flex-start; /* <-- UBAH INI */
-    gap: 12px; /* <-- UBAH INI */
+    justify-content: flex-start; 
+    gap: 12px; 
     
     color: #ffffff;
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
     transition: background-color 0.3s, border-color 0.3s;
-    
-    /* HAPUS baris 'aspect-ratio: 1 / 1;' */
 }
 
 .category-card:hover {
@@ -797,31 +753,28 @@ footer {
     color: #ffffff;
 }
 
-/* Ganti rule .category-card svg yang lama dengan ini */
 .category-card svg {
-    width: 24px; /* <-- UBAH INI */
-    height: 24px; /* <-- UBAH INI */
+    width: 24px; 
+    height: 24px; 
     stroke: currentColor; 
-    flex-shrink: 0; /* Mencegah ikon menyusut */
+    flex-shrink: 0; 
 }
 
-/* --- Tambahkan rule baru ini --- */
 .category-card span {
-    min-width: 0;             /* 1. Izinkan 'span' untuk mengecil (ini yang utama) */
-    white-space: nowrap;      /* 2. Jaga agar teks tetap satu baris */
-    overflow: hidden;         /* 3. Sembunyikan teks yang meluap */
-    text-overflow: ellipsis;  /* 4. Tampilkan "..." di akhir */
+    min-width: 0;             
+    white-space: nowrap;      
+    overflow: hidden;         
+    text-overflow: ellipsis;  
 }
 
-/* --- Aturan Posisi Kategori Baru --- */
 .category-card:nth-child(5) {
     grid-column-start: 2;
 }
 
 /* --- Featured Products Section --- */
 .featured-products-section {
-    max-width: 1200px; /* Samakan dengan lebar .category-section */
-    margin: 0 auto 40px auto; /* Memberi jarak atas/bawah */
+    max-width: 1200px; 
+    margin: 0 auto 40px auto; 
     margin-bottom: 400px;
     text-align: left;
 }
@@ -839,7 +792,7 @@ footer {
 
 .featured-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 kolom sama rata */
+    grid-template-columns: repeat(4, minmax(0, 1fr)); 
     gap: 15px;
 }
 
@@ -850,14 +803,13 @@ footer {
     padding: 15px;
     text-align: left;
     display: flex;
-    flex-direction: column; /* Menyusun item (gambar, teks, tombol) ke bawah */
+    flex-direction: column; 
 }
 
-/* Kotak untuk gambar */
 .featured-card-image {
     width: 100%;
     height: 150px; 
-    background-color: #2a2a2a; /* Latar belakang kotak gambar */
+    background-color: #2a2a2a; 
     border-radius: 6px;
     margin-bottom: 15px;
     display: flex;
@@ -866,11 +818,10 @@ footer {
     overflow: hidden;
 }
 
-/* Gambar di dalam kotak */
 .featured-card-image img {
     max-width: 90%;
     max-height: 90%;
-    object-fit: contain; /* Memastikan gambar pas tanpa terpotong */
+    object-fit: contain; 
 }
 
 .featured-card h3 {
@@ -880,15 +831,13 @@ footer {
     font-weight: 600;
 }
 
-/* Teks kategori (Microcontroller, Sensor, dll.) */
 .featured-card p {
     margin: 0 0 15px 0;
     color: #aaa;
     font-size: 0.9rem;
-    flex-grow: 1; /* Mendorong tombol ke bagian bawah card */
+    flex-grow: 1; 
 }
 
-/* Tombol "View Details" */
 .btn-view-details {
     display: block;
     text-align: center;
@@ -913,15 +862,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 85vh; /* Mengisi hampir seluruh layar */
+    min-height: 85vh; 
     background-color: #000000;
-    /* Efek glow merah halus di belakang form */
     background-image: radial-gradient(circle at 50% 50%, rgba(245, 50, 44, 0.1) 0%, rgba(0,0,0,0) 50%);
     padding: 40px 20px;
 }
 
 .auth-card {
-    background-color: #111; /* Sedikit lebih terang dari background utama */
+    background-color: #111; 
     border: 1px solid #333;
     border-radius: 12px;
     padding: 40px;
@@ -950,7 +898,6 @@ footer {
     font-size: 0.95rem;
 }
 
-/* Styling Input agar mirip dengan Search Bar */
 .form-group input {
     width: 100%;
     padding: 12px 15px;
@@ -961,7 +908,7 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
-    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+    box-sizing: border-box; 
 }
 
 .form-group input:focus {
@@ -986,7 +933,6 @@ footer {
     cursor: pointer;
 }
 
-/* Tombol Full Width */
 .cta-button.full-width {
     width: 100%;
     text-align: center;
@@ -1022,7 +968,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Memastikan checkbox di dalam form-options tidak memiliki margin bawah default */
 .form-options .form-checkbox {
     margin-bottom: 0; 
 }
@@ -1034,7 +979,7 @@ footer {
 }
 
 .forgot-password:hover {
-    color: var(--primary-red); /* Berubah merah saat di-hover */
+    color: var(--primary-red); 
 }
 
 /* --- About Us Page Styles --- */
@@ -1042,7 +987,7 @@ footer {
 /* Hero Section Khusus About */
 .about-hero {
     background-color: #000;
-    min-height: 50vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1070,16 +1015,21 @@ footer {
     margin: 0 auto;
 }
 
-/* Team Section (Sesuai Referensi Gambar) */
+/* Team Section */
 .team-section {
     background-color: #000;
-    padding: 80px 5%;
+    background-image: radial-gradient(circle at 50% 0px, rgba(255, 0, 0, 0.25) 0%, rgba(0,0,0,0) 35%);
+    
+    /* Padding bawah 0 agar dekat dengan section berikutnya */
+    padding: 100px 5% 0px 5%; 
+    
     text-align: center;
+    min-height: 60vh;
 }
 
 .team-header {
-    text-align: left; /* Judul About Us di kiri sesuai gambar */
-    margin-bottom: 50px;
+    text-align: left; 
+    margin-bottom: 60px; /* Jarak antara judul dan foto diperbesar sedikit */
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -1087,14 +1037,16 @@ footer {
 
 .about-us-title {
     font-family: 'Instrument Sans', sans-serif;
-    font-size: 4rem;
+    
+    /* UBAH 1: Ukuran Font Judul Diperbesar Drastis */
+    font-size: 6.5rem; 
+    
     font-weight: 700;
     color: #fff;
     margin: 0;
-    
-    /* TAMBAHKAN DUA BARIS INI: */
     position: relative;
     isolation: isolate; 
+    line-height: 1.1; /* Jarak antar baris diperpadat */
 }
 
 /* Efek coretan merah pada kata 'Us.' */
@@ -1107,30 +1059,20 @@ footer {
     content: '';
     position: absolute;
     
-    /* --- POSISI HORIZONTAL --- */
-    /* Geser lebih jauh ke kiri agar menutupi kata 'About' */
-    left: -170px;  
-    
-    /* Panjang garis */
-    width: 260px; 
-    
-    /* --- POSISI VERTIKAL (AGAR DI BELAKANG TEKS) --- */
-    /* Naikkan nilainya agar naik ke tengah huruf, bukan di kaki */
-    bottom: 27.2px; 
-    
-    /* Pertebal sedikit agar terlihat seperti blok highlight */
-    height: 25px; 
+    /* UBAH 2: Penyesuaian Garis Merah untuk Font 6.5rem */
+    left: -272.5px;       /* Geser lebih ke kiri */
+    width: 420px;       /* Garis lebih panjang */
+    bottom: 20px;       /* Posisi naik ke atas mengikuti ukuran huruf */
+    height: 35px;       /* Ketebalan garis */
     
     background-color: var(--primary-red);
-    
-    /* Pastikan layer ini di belakang teks agar tulisan tidak tertutup */
     z-index: -1; 
 }
 
 /* Grid Layout untuk 4 Orang */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 Kolom */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -1142,15 +1084,15 @@ footer {
 
 .team-photo {
     width: 100%;
-    aspect-ratio: 3 / 4; /* Rasio potrait */
+    aspect-ratio: 3 / 4; 
     overflow: hidden;
     margin-bottom: 15px;
-    filter: grayscale(100%); /* Membuat foto Hitam Putih (B&W) */
+    filter: grayscale(100%); 
     transition: filter 0.3s;
 }
 
 .team-photo:hover {
-    filter: grayscale(0%); /* Berwarna saat di-hover (opsional) */
+    filter: grayscale(0%); 
 }
 
 .team-photo img {
@@ -1160,27 +1102,147 @@ footer {
 }
 
 .team-card h3 {
-    font-family: 'Poppins', sans-serif; /* Atau bisa pakai Instrument Sans */
-    font-size: 1rem;
-    font-weight: 500; /* Font agak tipis sesuai gambar */
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.1rem; /* Nama sedikit diperbesar */
+    font-weight: 500; 
     color: #fff;
-    font-style: italic; /* Nama miring agar estetik */
-    margin-top: 10px;
+    font-style: italic; 
+    margin-top: 15px;
 }
 
 .team-footer-quote {
-    margin-top: 60px;
-    font-size: 1.3rem;
+    margin-top: 70px; /* Jarak dari foto ke quote */
+    
+    /* UBAH 3: Font Quote Diperbesar */
+    font-size: 1.8rem; 
+    
     color: #fff;
     font-family: 'Instrument Sans', sans-serif;
     font-style: italic;
     font-weight: 400;
+    max-width: 1100px; /* Lebar teks diperluas agar tidak terlalu cepat turun baris */
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
+/* --- Our Background Section (FINAL & CLEANED) --- */
+
+.background-story {
+    background-color: #000000;
+    position: relative;
+    
+    /* Padding Atas 50px, Bawah 120px */
+    padding: 10px 5% 120px 5%; 
+    
+    overflow: hidden; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+    /* Tinggi section dibuat cukup besar agar halaman bisa di-scroll */
+    min-height: 85vh; 
+}
+
+/* Wrapper Utama */
+.bg-content-wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    max-width: 1800px;
+    width: 100%;
+    gap: 200px; 
+    position: relative;
+    z-index: 1; 
+}
+
+/* Kolom Teks */
+.bg-text-column {
+    flex: 1; 
+    text-align: left;
+    max-width: 650px; 
+    /* Sedikit turun agar pas secara visual dengan atas gambar */
+    padding-top: 10px; 
+}
+
+.bg-text-column h2 {
+    font-size: 5rem; 
+    line-height: 1;
+    margin-bottom: 30px; /* Jarak judul ke paragraf */
+    font-weight: 600;
+}
+
+.bg-text-column p {
+    color: #cccccc;
+    font-size: 1.25rem; /* Ukuran font disesuaikan agar rapi */
+    line-height: 1.8;   /* Spasi antar baris diperlega */
+    margin-top: 0;
+    
+    /* UBAH 3: Rata Kanan-Kiri (Justify) agar terlihat kotak dan rapi */
+    text-align: justify; 
+}
+
+/* Kolom Gambar Gedung */
+.bg-image-column {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start; /* Gambar menempel ke atas */
+}
+
+.bg-image-column img {
+    width: 120%; 
+    height: auto; 
+    max-width: 900px; 
+    
+    /* Filter Hitam Putih */
+    filter: grayscale(100%) contrast(1.1);
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6); 
+    
+    /* Pastikan gambar tidak ditarik paksa */
+    object-fit: cover;
+}
+
+/* Custom Red Strike */
+.red-strike-long {
+    position: relative;
+    display: inline-block;
+}
+
+.red-strike-long::after {
+    content: '';
+    position: absolute;
+    width: 350px;      
+    left: 125px;      
+    bottom: 11px;      
+    height: 35px;      
+    background-color: var(--primary-red);
+    z-index: -1;
+}
+
+/* Responsif untuk Mobile/Tablet */
+@media (max-width: 968px) {
+    .bg-content-wrapper {
+        flex-direction: column; 
+        text-align: left;
+    }
+
+    .bg-image-column {
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
+    .red-strike-long::after {
+        width: 100%; 
+        left: 0;
+    }
 }
 
 /* Responsif untuk Mobile */
 @media (max-width: 768px) {
     .team-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 Kolom di tablet */
+        grid-template-columns: repeat(2, 1fr); 
     }
     .about-us-title {
         font-size: 3rem;
@@ -1189,6 +1251,6 @@ footer {
 
 @media (max-width: 480px) {
     .team-grid {
-        grid-template-columns: 1fr; /* 1 Kolom di HP */
+        grid-template-columns: 1fr; 
     }
 }
