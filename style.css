@@ -1086,29 +1086,45 @@ footer {
 }
 
 .about-us-title {
-    font-family: 'Instrument Sans', sans-serif; /* Font tebal */
+    font-family: 'Instrument Sans', sans-serif;
     font-size: 4rem;
     font-weight: 700;
     color: #fff;
     margin: 0;
+    
+    /* TAMBAHKAN DUA BARIS INI: */
+    position: relative;
+    isolation: isolate; 
 }
 
 /* Efek coretan merah pada kata 'Us.' */
 .red-strike {
     position: relative;
     display: inline-block;
-    z-index: 1;
 }
 
 .red-strike::after {
     content: '';
     position: absolute;
-    left: 0;
-    bottom: 15px; /* Posisi garis merah */
-    width: 100%;
-    height: 20px; /* Ketebalan garis merah */
+    
+    /* --- POSISI HORIZONTAL --- */
+    /* Geser lebih jauh ke kiri agar menutupi kata 'About' */
+    left: -170px;  
+    
+    /* Panjang garis */
+    width: 260px; 
+    
+    /* --- POSISI VERTIKAL (AGAR DI BELAKANG TEKS) --- */
+    /* Naikkan nilainya agar naik ke tengah huruf, bukan di kaki */
+    bottom: 27.2px; 
+    
+    /* Pertebal sedikit agar terlihat seperti blok highlight */
+    height: 25px; 
+    
     background-color: var(--primary-red);
-    z-index: -1; /* Di belakang teks */
+    
+    /* Pastikan layer ini di belakang teks agar tulisan tidak tertutup */
+    z-index: -1; 
 }
 
 /* Grid Layout untuk 4 Orang */
