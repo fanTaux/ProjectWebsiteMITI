@@ -906,3 +906,273 @@ footer {
     background-color: #333;
     border-color: #777;
 }
+
+/* --- Authentication Pages (Login/Register) --- */
+
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh; /* Mengisi hampir seluruh layar */
+    background-color: #000000;
+    /* Efek glow merah halus di belakang form */
+    background-image: radial-gradient(circle at 50% 50%, rgba(245, 50, 44, 0.1) 0%, rgba(0,0,0,0) 50%);
+    padding: 40px 20px;
+}
+
+.auth-card {
+    background-color: #111; /* Sedikit lebih terang dari background utama */
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 480px;
+    text-align: left;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.auth-subtitle {
+    color: var(--light-text);
+    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #cccccc;
+    font-size: 0.95rem;
+}
+
+/* Styling Input agar mirip dengan Search Bar */
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.form-checkbox input[type="checkbox"] {
+    accent-color: var(--primary-green);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Tombol Full Width */
+.cta-button.full-width {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.highlight-green {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+.highlight-green:hover {
+    text-decoration: underline;
+}
+
+/* --- Tambahan Khusus Halaman Login --- */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+/* Memastikan checkbox di dalam form-options tidak memiliki margin bawah default */
+.form-options .form-checkbox {
+    margin-bottom: 0; 
+}
+
+.forgot-password {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: var(--primary-red); /* Berubah merah saat di-hover */
+}
+
+/* --- About Us Page Styles --- */
+
+/* Hero Section Khusus About */
+.about-hero {
+    background-color: #000;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+    border-bottom: 1px solid #222;
+}
+
+.about-hero h1 {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text-stroke {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.about-hero p {
+    color: #888;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Team Section (Sesuai Referensi Gambar) */
+.team-section {
+    background-color: #000;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.team-header {
+    text-align: left; /* Judul About Us di kiri sesuai gambar */
+    margin-bottom: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-us-title {
+    font-family: 'Instrument Sans', sans-serif; /* Font tebal */
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+/* Efek coretan merah pada kata 'Us.' */
+.red-strike {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.red-strike::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 15px; /* Posisi garis merah */
+    width: 100%;
+    height: 20px; /* Ketebalan garis merah */
+    background-color: var(--primary-red);
+    z-index: -1; /* Di belakang teks */
+}
+
+/* Grid Layout untuk 4 Orang */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Kolom */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-card {
+    text-align: center;
+}
+
+.team-photo {
+    width: 100%;
+    aspect-ratio: 3 / 4; /* Rasio potrait */
+    overflow: hidden;
+    margin-bottom: 15px;
+    filter: grayscale(100%); /* Membuat foto Hitam Putih (B&W) */
+    transition: filter 0.3s;
+}
+
+.team-photo:hover {
+    filter: grayscale(0%); /* Berwarna saat di-hover (opsional) */
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    font-family: 'Poppins', sans-serif; /* Atau bisa pakai Instrument Sans */
+    font-size: 1rem;
+    font-weight: 500; /* Font agak tipis sesuai gambar */
+    color: #fff;
+    font-style: italic; /* Nama miring agar estetik */
+    margin-top: 10px;
+}
+
+.team-footer-quote {
+    margin-top: 60px;
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: 'Instrument Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Kolom di tablet */
+    }
+    .about-us-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* 1 Kolom di HP */
+    }
+}
