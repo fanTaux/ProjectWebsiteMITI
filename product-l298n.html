@@ -51,7 +51,7 @@
 
                     <div class="pd-detail-header">Product Detail</div>
                     <p class="pd-description">
-                        The L298N Dual H-Bridge Motor Driver Module is a robust and essential component for robotics and mechatronics projects, designed to independently control the speed and direction of two DC motors or one stepper motor simultaneously. Built around the high-power ST L298N driver chip, this module supports a wide motor voltage range up to 35V and delivers a continuous current of 2A per channel, making it ideal for driving various motors in smart car chassis and automation systems. It features an onboard 5V regulator to power external microcontrollers, a substantial heat sink for effective thermal management during heavy loads, and convenient screw terminals for secure wiring. With full support for PWM speed control and seamless compatibility with platforms like Arduino and Raspberry Pi, this driver offers the reliability and power needed for complex motor control applications.
+                        The L298N Dual H-Bridge Motor Driver Module is a robust and essential component for robotics, designed to independently control the speed and direction of two DC motors or one stepper motor. Built around the high-power ST L298N driver chip, this module supports a wide motor voltage range up to 35V and delivers a continuous current of 2A per channel.
                     </p>
 
                     <div class="pd-actions">
@@ -59,6 +59,25 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <section class="qna-section">
+            <h2 class="qna-title">Pertanyaan Umum (Q&A)</h2>
+            
+            <div class="qna-item">
+                <div class="qna-question">Berapa arus maksimal yang bisa ditangani driver ini?</div>
+                <div class="qna-answer">Driver ini mampu menangani arus kontinu hingga 2A per channel (motor). Jika Anda menggunakan motor dengan beban arus lebih tinggi dari itu, disarankan menggunakan pendingin tambahan atau driver tipe lain.</div>
+            </div>
+
+            <div class="qna-item">
+                <div class="qna-question">Apa fungsi Jumper 5V Enable di board ini?</div>
+                <div class="qna-answer">Jika jumper terpasang, board akan menggunakan regulator internal untuk menghasilkan 5V dari input motor (jika input < 12V). Jika Anda menggunakan tegangan motor > 12V, LEPAS jumper ini dan berikan suplai 5V eksternal ke terminal logika agar regulator internal tidak terbakar.</div>
+            </div>
+
+            <div class="qna-item">
+                <div class="qna-question">Apakah bisa mengontrol kecepatan motor (PWM)?</div>
+                <div class="qna-answer">Ya, pin Enable A (ENA) dan Enable B (ENB) dapat dihubungkan ke pin PWM mikrokontroler (Arduino) untuk mengatur kecepatan putaran motor (0-255). Jangan lupa melepas jumper pada pin ENA/ENB jika ingin menggunakan PWM.</div>
             </div>
         </section>
     </main>
