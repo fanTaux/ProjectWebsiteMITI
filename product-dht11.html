@@ -51,7 +51,7 @@
 
                     <div class="pd-detail-header">Product Detail</div>
                     <p class="pd-description">
-                        The DHT11 Temperature and Humidity Sensor is a cost-effective and reliable digital sensor module designed for basic environmental monitoring in IoT and home automation projects. Featuring a calibrated digital signal output via a proprietary single-wire protocol, it measures ambient temperature from 0°C to 50°C and relative humidity from 20% to 90% with stable performance and long-term durability. Inside, it integrates a resistive humidity sensing component and an NTC thermistor connected to a high-performance 8-bit microcontroller, ensuring fast response times and strong interference resistance. With a sampling rate of 1Hz and simple connectivity, it is incredibly easy to interface with microcontrollers without needing complex circuitry. Ideally suited for weather stations, HVAC systems, and indoor climate control, this sensor is widely supported by standard libraries for Arduino, ESP32, and Raspberry Pi, making it the go-to choice for beginners and hobbyists seeking a plug-and-play sensing solution.
+                        The DHT11 Temperature and Humidity Sensor is a cost-effective and reliable digital sensor module designed for basic environmental monitoring in IoT and home automation projects. Featuring a calibrated digital signal output via a proprietary single-wire protocol, it measures ambient temperature from 0°C to 50°C and relative humidity from 20% to 90%. Ideally suited for weather stations, HVAC systems, and indoor climate control.
                     </p>
 
                     <div class="pd-actions">
@@ -61,6 +61,26 @@
 
             </div>
         </section>
+
+        <section class="qna-section">
+            <h2 class="qna-title">Pertanyaan Umum (Q&A)</h2>
+            
+            <div class="qna-item">
+                <div class="qna-question">Apa perbedaan DHT11 dengan DHT22?</div>
+                <div class="qna-answer">DHT11 lebih murah namun memiliki rentang pengukuran dan akurasi yang lebih rendah dibandingkan DHT22. DHT11 cocok untuk pemula atau proyek hobi, sedangkan DHT22 lebih baik untuk kebutuhan presisi industri.</div>
+            </div>
+
+            <div class="qna-item">
+                <div class="qna-question">Apakah modul ini memerlukan resistor tambahan?</div>
+                <div class="qna-answer">Jika Anda membeli modul PCB (seperti gambar), biasanya resistor pull-up 10k ohm sudah terpasang di dalamnya. Jika Anda menggunakan sensor DHT11 'polos' (4 kaki), Anda perlu menambahkan resistor pull-up antara pin Data dan VCC.</div>
+            </div>
+
+            <div class="qna-item">
+                <div class="qna-question">Bagaimana cara membaca datanya di Arduino?</div>
+                <div class="qna-answer">Anda memerlukan library "DHT Sensor Library" dari Adafruit. Karena sensor ini menggunakan protokol single-wire digital, data suhu dan kelembaban dikirim secara serial melalui satu pin digital.</div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
