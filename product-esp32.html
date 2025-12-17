@@ -51,7 +51,7 @@
 
                     <div class="pd-detail-header">Product Detail</div>
                     <p class="pd-description">
-                        The ESP32 ESP-32 DOIT WiFi + Bluetooth IoT Development Board is a versatile and high-performance microcontroller board designed for a wide range of IoT, automation, and embedded projects. Equipped with a dual-core processor running up to 240 MHz, this board combines powerful computing capability with integrated 2.4 GHz WiFi and Bluetooth (Classic + BLE), making it suitable for both networked and standalone applications. It features 520 KB SRAM, 4 MB Flash, and extensive GPIO pins.
+                        The ESP32 ESP-32 DOIT WiFi + Bluetooth IoT Development Board is a versatile and high-performance microcontroller board designed for a wide range of IoT, automation, and embedded projects. Equipped with a dual-core processor running up to 240 MHz, this board combines powerful computing capability with integrated 2.4 GHz WiFi and Bluetooth (Classic + BLE).
                     </p>
 
                     <div class="pd-actions">
@@ -59,6 +59,25 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <section class="qna-section">
+            <h2 class="qna-title">Pertanyaan Umum (Q&A)</h2>
+            
+            <div class="qna-item">
+                <div class="qna-question">Berapa tegangan input yang aman untuk board ini?</div>
+                <div class="qna-answer">Anda bisa menyuplai daya melalui kabel Micro-USB (5V) atau melalui pin VIN dengan tegangan rentang 5V hingga 9V. Perhatian: Chip ESP32 bekerja pada logika 3.3V, jangan berikan tegangan 5V langsung ke pin GPIO.</div>
+            </div>
+
+            <div class="qna-item">
+                <div class="qna-question">Apakah bisa diprogram menggunakan Arduino IDE?</div>
+                <div class="qna-answer">Ya, sangat bisa. Anda cukup menambahkan link Board Manager ESP32 di Preferences Arduino IDE, lalu install board package-nya. Board ini juga mendukung PlatformIO dan MicroPython.</div>
+            </div>
+
+            <div class="qna-item">
+                <div class="qna-question">Apa kelebihan ESP32 dibanding ESP8266 (NodeMCU)?</div>
+                <div class="qna-answer">ESP32 jauh lebih bertenaga dengan prosesor Dual-Core, memiliki Bluetooth (Classic + BLE) yang tidak dimiliki ESP8266, jumlah pin GPIO yang lebih banyak, serta fitur Capacitive Touch Sensor bawaan.</div>
             </div>
         </section>
     </main>
